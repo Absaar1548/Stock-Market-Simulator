@@ -1,0 +1,45 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Portfolio
+{% endblock %}
+
+{% block main %}
+<table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Symbol</th>
+                <th>Name</th>
+                <th>Shares</th>
+                <th>Price</th>
+                <th>TOTAL</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <td colspan="4"></td>
+                <!-- To change -->
+                <td id="grandtotal">{{ grand_total }}</td>
+            </tr>
+        </tfoot>
+        <tbody>
+                <!-- To change -->
+                {% for row in index_rows %}
+                    {% if row["shares"] > 0 %}
+                        <tr>
+                            <td>{{ row["symbol"] }}</td>
+                            <td>{{ row["company"] }}</td>
+                            <td>{{ row["shares"] }}</td>
+                            <td>{{ row["usd_price"] }}</td>
+                            <td>{{ row["usd_total"]  }}</td>
+                        </tr>
+                        {% endif %}
+                    {% endfor %}
+            <tr>
+                <td colspan="4">CASH</td>
+                <!-- To change -->
+                <td>{{ cash_total }}</td>
+            </tr>
+        </tbody>
+    </table>
+{% endblock %}
