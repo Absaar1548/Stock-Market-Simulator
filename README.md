@@ -1,7 +1,6 @@
 # Stock Trading Simulator
-![Image](https://images.app.goo.gl/w32XKHH49UPaMDDWA)
 
-
+![unnamed](https://user-images.githubusercontent.com/78752052/166103349-0df1b399-851f-41b5-886b-086a69654eac.png)
 
 
 ## About
@@ -16,6 +15,7 @@ It consists of a dynamic ReactJS frontend using Material UI, React Routing and H
 \
 
 \
+
 \
 \
 
